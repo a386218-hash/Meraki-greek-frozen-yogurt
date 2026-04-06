@@ -1,0 +1,5 @@
+{
+  "name": "Meraki Greek Frozen Yogurt",
+  "description": "El yogurt griego más cremoso e irresistible de Chihuahua. Personaliza tu experiencia Meraki.",
+  "requestFramePermissions": ["geolocation"]
+}

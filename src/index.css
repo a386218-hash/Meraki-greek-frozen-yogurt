@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Quicksand", sans-serif;
+  
+  --color-greek-blue: #005EB8;
+  --color-greek-light: #E0F2FE;
+  --color-meraki-pink: #FBCFE8;
+  --color-meraki-mint: #D1FAE5;
+  --color-meraki-cream: #FFFBF0;
+}
+
+@layer base {
+  body {
+    @apply bg-meraki-cream text-slate-900 font-sans;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display font-bold;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.btn-primary {
+  @apply bg-greek-blue text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-blue-700 transition-all active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-white text-greek-blue border-2 border-greek-blue px-8 py-4 rounded-full font-bold hover:bg-greek-light transition-all active:scale-95;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-greek-blue to-blue-400;
+}
